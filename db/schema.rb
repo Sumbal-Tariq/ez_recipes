@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200702020137) do
+ActiveRecord::Schema.define(version: 20200702021816) do
 
   create_table "chefs", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "chefname"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20200702020137) do
     t.text     "description", limit: 65535
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
+    t.integer  "chef_id"
   end
 
 end
